@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UiPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="LIK-q0-6IE">
+                                <rect key="frame" x="0.0" y="67" width="414" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="522616264.86586702">
+                                    <!--2017-07-24 19:11:04 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="dateChose:" destination="BYZ-38-t0r" eventType="valueChanged" id="awx-EV-uew"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It was a " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="df9-7C-4fc">
+                                <rect key="frame" x="20" y="328" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LIK-q0-6IE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="330-m9-O2p"/>
+                            <constraint firstItem="LIK-q0-6IE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XSB-2x-Vzs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="df9-7C-4fc" secondAttribute="trailing" id="psb-Np-vXE"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="df9-7C-4fc" secondAttribute="leading" id="rjX-Aw-wph"/>
+                            <constraint firstItem="df9-7C-4fc" firstAttribute="top" secondItem="LIK-q0-6IE" secondAttribute="bottom" constant="45" id="sMo-8I-hS4"/>
+                            <constraint firstAttribute="trailing" secondItem="LIK-q0-6IE" secondAttribute="trailing" id="uYw-oI-2e5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dt" destination="LIK-q0-6IE" id="qXb-F3-kBu"/>
+                        <outlet property="lbl" destination="df9-7C-4fc" id="Df6-94-3Ht"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.710144927536234" y="136.95652173913044"/>
+        </scene>
+    </scenes>
+</document>
